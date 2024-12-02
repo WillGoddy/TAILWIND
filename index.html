@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex justify-between items-center p-4 bg-gray-200">
+        <h1 class="text-xl">GODWILL JONATHAN</h1>
+        <nav>
+            <ul class="flex end gap-5 flex space-x-4">
+               <li>
+                <a href="#home">Accueil</a>
+               </li>
+               <li>
+                <a href="#skills">Mes Compétences</a>
+               </li>
+               <li>
+                <a href="#project">Projet</a>
+               </li>
+               <li>
+                <a href="#contact">Contact</a>
+               </li>
+        </nav>
+    </header>
+
+
+
+    <section id="home" class="bg-local bg-cover " style="background-image : url(images.jpg) " >
+        <h1 class="text-center text-2xl text-white font-bold p-2">QUI SUIS-JE ?</h1>
+        <p class="text-white text-justify mx-5 lg:mx-12 p-3"> Je suis un jeune qui travaille dans un cabinet de formation en tant que conseiller en formation mais qui est en train de suivre une formation en developpement full stack JS avec GOMYCODE. Acquérir des compétences est très important pour moi pour me lancer dans ma nouvelle carrière.</p>
+    </section>
+    <!--Compétences-->
+    <section id="skills">
+        <h1 class="text-center text-2xl font-bold p-8">MES COMPETENCES</h1>
+        <div class="grid grid-cols-3 mx-5 lg:mx-12">
+            <div>J'arrive à concevoir des affiches à l'aide d'outils en ligne de nos jours, des outils vraiment utilisés, comme CANVA et PHOTOSHOP.</div>
+            <div>Je suis aussi expert en Excel suite à une formation suivie à PIGIER.</div>
+            <div>J'ai une parfaite maîtrise des réseaux sociaux, toujours dans le cadre du travail.</div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container mx-auto mt-8">
+            <h1 class="text-2xl font-bold mb-8 p-2 text-center">MES PROJETS</h1>
+            <h2 class="font-bold mb-2"> VOYAGER</h2>
+            <img src="voyage.jpg" alt="le monde" class="w-24 md:w-48 lg:w-64">
+            <p>Je planifie de faire des voyages et tout plein de voyage à travers le monde.</p>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container mx-auto mt-8">
+            <h2 class="font-bold mb-2"> APPLICATION</h2>
+            <img src="Furi.jpg" alt="Téléphone" class="w-24 md:w-48 lg:w-64">
+            <p>J'ai pour projet de développer une application pour les étudiants, une sorte d'applicaiton qui va réunir plusieurs université</p>
+        </div>
+    </section>
+    <!--Contact-->
+    <section id="contact" class="mt-8">
+        <form class="space-y-4">
+            <div>
+                <label for="name" >Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" class="w-full p-3 border border-gray-300 rounded-md ">
+            </div>
+            <div>
+                <label for="email" >Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" class="w-full p-3 border border-gray-300 rounded-md ">
+            </div>
+  
+            <div>
+                <label for="message" >Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message" class="w-full p-3 border border-gray-300 rounded-md "></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded-md font-medium hover:bg-blue-600">Envoyer</button>
+                                
+        </form>
+
+    </section>
+</body>
+</html>
